@@ -36,6 +36,16 @@ body {
     color: #666;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.footer-href {
+    color: #008bf8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 /* Стилизация внешнего контейнера textarea */
 .textarea-container {
     position: relative;
