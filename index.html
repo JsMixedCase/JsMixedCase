@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>JsMixedCase</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+<div class="header">
+    <h1>JsMixedCase</h1>
+</div>
+
+<div class="container">
+    <div class="section">
+        <p>
+            Небольшой набор функционала для написания текста в стиле 2007 года от Эмо :)
+            <b>Сгенерированный на GPT-4</b>
+        </p>
+    </div>
+
+    <form>
+        <fieldset id="group1">
+            <p>
+                <label>
+                    <input type="radio" value="mutateText1" name="group1" checked="checked">
+                    ЧеРеДоВаТь рЕгИсТрЫ БуКв в тЕкСтЕ
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" value="mutateText2" name="group1">
+                    Первая Буква Каждого Слова Заглавная
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" value="mutateText3" name="group1">
+                    ЧеРеДоВаТь РеГиСтРы БуКв В ТеКсТе, Но ЕщЕ КаЖдОе СлОвО НаЧиНаТь С ЗаГлАвНоЙ
+                </label>
+            </p>
+        </fieldset>
+    </form>
+
+    <div class="section">
+        <div class="textarea-container">
+            <label>
+                <b>Введите текст</b>
+                <textarea onkeyup="mutateText(this)"></textarea>
+                <b>Результат:</b>
+                <div class="result" id="result_1"></div>
+            </label>
+        </div>
+    </div>
+
+    <script src="/assets/app.js"></script>
+</body>
+</html>

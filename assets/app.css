@@ -1,0 +1,172 @@
+body {
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #00345D;
+    color: #fff;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #00345D;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.section p {
+    color: #666;
+}
+
+/* Стилизация внешнего контейнера textarea */
+.textarea-container {
+    position: relative;
+}
+
+/* Стилизация самого textarea */
+.textarea-container textarea {
+    width: 100%;
+    height: 200px; /* Задайте нужную высоту */
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical; /* Разрешить изменение размера только по вертикали */
+}
+
+/* Стилизация псевдоэлемента "after" для создания рамки */
+.textarea-container textarea::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #e81d62; /* Задайте нужный цвет рамки */
+    border-radius: 8px;
+    pointer-events: none; /* Позволяет кликать сквозь псевдоэлемент */
+}
+
+/* Общий стиль label */
+label {
+    /* Цвет и размер шрифта */
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Плавающий эффект для label при использовании с полем ввода */
+.floating-label {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.floating-label input[type="text"],
+.floating-label input[type="email"],
+.floating-label input[type="password"] {
+    /* Полный размер и некоторый стиль границы */
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    transition: border-color 0.3s;
+}
+
+/* Эффект плавающего label */
+.floating-label label {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+/* Стилизация при фокусировке */
+.floating-label input[type="text"]:focus,
+.floating-label input[type="email"]:focus,
+.floating-label input[type="password"]:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.floating-label input[type="text"]:focus + label,
+.floating-label input[type="email"]:focus + label,
+.floating-label input[type="password"]:focus + label,
+.floating-label input[type="text"]:not(:placeholder-shown) + label,
+.floating-label input[type="email"]:not(:placeholder-shown) + label,
+.floating-label input[type="password"]:not(:placeholder-shown) + label {
+    font-size: 12px;
+    top: -10px;
+    color: #007BFF;
+}
+
+/* Стиль при вводе содержимого */
+.floating-label input[type="text"]:not(:placeholder-shown) + label,
+.floating-label input[type="email"]:not(:placeholder-shown) + label,
+.floating-label input[type="password"]:not(:placeholder-shown) + label {
+    color: #666;
+}
+
+.result {
+    width: 100%;
+    background-color: #00345d1a;
+    padding: 10px 5px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Пример стилизации полей внутри fieldset */
+
+fieldset input[type="text"],
+fieldset textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Дополнительные стили можно добавить по вашему усмотрению */
